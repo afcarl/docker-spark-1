@@ -7,8 +7,8 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-ENV SPARK_VERSION 2.0.0-preview
-ENV HADOOP_VERSION 2.7
+ENV SPARK_VERSION 1.6.1
+ENV HADOOP_VERSION 2.6
 
 RUN wget https://dist.apache.org/repos/dist/release/spark/spark-${SPARK_VERSION}/spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz \
     && tar -xzf spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz -C / \
