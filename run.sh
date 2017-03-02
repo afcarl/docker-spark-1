@@ -10,7 +10,7 @@ if [ -z $1 ]; then
 elif [ -e $SPARK_HOME/bin/$1 ]; then
     $SPARK_HOME/bin/$1 ${@:2}
 elif [ -e $SPARK_HOME/sbin/$1 ]; then
-    # For the scripts, we want to stay foreground to prevent container exit
+    # For the scripts, we want to stay in foreground to prevent container exit
     $SPARK_HOME/sbin/$1 ${@:2}
 else
     $@

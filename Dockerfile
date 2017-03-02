@@ -1,6 +1,6 @@
-FROM reactiveai/oracle-java:7
+FROM cogentlabs/oracle-java:7
 
-MAINTAINER Joe Bullard <jbullard@reactive.co.jp>
+MAINTAINER Joe Bullard <jbullard@cogent.co.jp>
 
 RUN apt-get update \
     && apt-get install -y wget ipython \
